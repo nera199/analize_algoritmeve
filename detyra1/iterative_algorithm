@@ -1,0 +1,22 @@
+import time
+
+start = time.time()
+
+def iterative_fibonacci(n):
+    a,b = 0,1
+    for i in range(n):
+        a,b = b,a+b
+    return a
+    
+val = int(input("Shtyp vleren: "))
+print(val)
+# kontrollo hyrjen n
+if val <= 0:
+   print("Numri n duhet te jete pozitiv")
+else:
+   print("Vargu Fibonacci:")
+   for i in range(val):
+       print(iterative_fibonacci(i))
+end = time.time()
+print("Koha e kaluar:")
+print(end - start)
