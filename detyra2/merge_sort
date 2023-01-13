@@ -57,12 +57,12 @@ while c<=n:
 	arr.append(random.randint(1,101)) 
 	c+=1 
 	
-print("Given array is")
+print("Vargu i gjeneruar")
 for i in range(n):
     print("%d" % arr[i],end=" ")
 start = time.time()
 mergeSort(arr, 0, n-1)
-print("\n\nSorted array is")
+print("\n\nVargu i renditur")
 for i in range(n):
     print("%d" % arr[i],end=" ")
 end = time.time()
