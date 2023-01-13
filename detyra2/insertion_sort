@@ -1,0 +1,28 @@
+import time
+import random
+
+
+def insertion_sort(array):
+    start = time.time()
+    for i in range(1, len(array)):
+        sort_value = array[i]
+ 
+        while array[i-1] > sort_value and i > 0:
+            array[i], array[i-1] = array[i-1], array[i]
+            i = i - 1
+            #print(array)
+    end = time.time()
+    print("Koha e kaluar:")
+    print(end - start)
+    return array
+n=int(input(‘Shtypni gjatesine e vargut: ’)) 
+arr=[] 
+c=1
+while c<=n: 
+	arr.append(random.randint(1,101)) 
+	c+=1 
+
+print("Vargu:")
+print(arr)
+print(insertion_sort(arr))
+
